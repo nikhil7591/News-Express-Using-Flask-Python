@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+
+<!-- Navbar section -->
+<!-- Your navbar HTML here -->
+
+<!-- Flash messages section -->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message[1] }}" role="alert">
+                            {{ message[0] }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endwith %}
+
+<!-- Content section -->
+{% block content %}{% endblock %}
+
+<!-- Footer section -->
+<!-- Your footer HTML here -->
+
+</body>
+</html>

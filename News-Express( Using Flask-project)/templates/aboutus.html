@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="icons8-news-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/Bootstrap CMS projec CSS.css">
+    <!-- <link rel="stylesheet" href="singup.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body >
+  <nav id="navbar">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">News Express</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="./index.html"  class="nav-link active" aria-current="page" onclick="getNews('all')">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul id="webList" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li onclick="sendCategory(this.id)" id="0">
+                  <a class="dropdown-item" href="#">National</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="1">
+                  <a class="dropdown-item" href="#">Business</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="2">
+                  <a class="dropdown-item" href="#">Sport</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="3">
+                  <a class="dropdown-item" href="#">World</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="4">
+                  <a class="dropdown-item" href="#">Politics</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="5">
+                  <a class="dropdown-item" href="#">Technology</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="6">
+                  <a class="dropdown-item" href="#">Startup</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="7">
+                  <a class="dropdown-item" href="#">Entertainment</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="8">
+                  <a class="dropdown-item" href="#">Miscellaneous</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="9">
+                  <a class="dropdown-item" href="#">Hatke</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="10">
+                  <a class="dropdown-item" href="#">Science</a>
+                </li>
+                <li onclick="sendCategory(this.id)" id="11">
+                  <a class="dropdown-item" href="#">Automobile</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="./aboutus.html"  class="nav-link active" aria-current="page" onclick="getNews('all')">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contactus.html"  class="nav-link active" aria-current="page" onclick="getNews('all')">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./singup.html"  class="nav-link active" aria-current="page" onclick="getNews('all')">Singup</a>
+            </li>
+          </ul>
+    </nav>
+  </nav>
+
+<main>
+    <div style="width: 100%;max-width: 900px; margin: 20px auto;">
+        <p>
+            <h3>About Us</h3>
+            <p>Welcome to News Express, your trusted source for reliable and up-to-date news from around the world. We are passionate about delivering high-quality journalism and helping you stay informed about the events that impact your life.</p>
+
+            <h3>Our Mission</h3>
+            <p>
+                At News Express, our mission is clear: to provide you with accurate, unbiased, and insightful news coverage. We believe that well-informed individuals make better decisions and contribute to a more informed society.
+            </p>
+            <h3>What Sets Us Apart</h3>
+            <p>
+                <h5>1. Journalistic Integrity:</h5> Our team of experienced journalists and editors is committed to upholding the highest standards of journalism. You can count on us for trustworthy news.
+
+                <h5>2. Comprehensive Coverage:</h5> We cover a wide range of topics, including politics, business, science, technology, entertainment, and more, ensuring that there's something for everyone.
+
+                <h5>3. Global Reach:</h5> With correspondents and sources worldwide, we bring you news from every corner of the globe, keeping you connected to international events.
+
+                <h5>4. Unbiased Reporting:</h5> We present the facts without bias, allowing you to form your own opinions based on accurate information.
+            </p>
+            <h3>Meet Our Team</h3>
+            <p>
+                Our dedicated team of journalists, photographers, and technical experts work tirelessly to bring you the latest news as it happens. Get to know the people behind News Express on our "Meet the Team" page.
+            </p>
+            <h3>Get in Touch</h3>
+            <p>
+                We welcome your feedback and engagement. Whether you have a news tip, suggestion, or simply want to reach out, please don't hesitate to contact us through our "Contact Us" page. Your input is valuable to us.
+
+                Thank you for choosing News Express as your reliable source of news. We look forward to providing you with quality journalism and keeping you informed about the world's most important events.
+                
+                Stay connected with us on social media and consider subscribing to our newsletter to receive daily updates directly in your inbox.</p>
+            <hr>
+            <p>
+                Feel free to customize and expand upon this content to reflect the unique values and mission of your "News Express" website.
+            </p>
+        </p>
+
+    </div>
+</main>
+
+<footer> 
+  <div class="container">
+      <div class="footer">
+          <article>
+              <div class="logo">
+                  <i class="fas fa-globe fa-2x"></i>
+                  <h2>News<span> Express</span></h2>
+              </div>
+              <p>
+                News Express is a media platform providing concise and timely news coverage across various topics. It delivers information in a straightforward manner, catering to a diverse audience seeking quick updates.
+              </p>
+          </article>
+
+          <article>
+              <h4>EMAIL NEWSLETTER</h4>
+              <p>A periodical electronic message delivering updates, promotions, or information to subscribers' inboxes.</p>
+              <input type="email" placeholder="Enter Email..." />
+              <a href="#"> Subscribe</a>
+          </article>
+
+          <article>
+              <h4>SITE LINKS</h4>
+              <p>Help & Support</p>
+              <p>Privacy Policy</p>
+              <p>About Us</p>
+              <p>Contact</p>
+          </article>
+
+          <article>
+              <h4>JOIN OUR CLUB</h4>
+              <p>
+                "Collaborate, connect, and share experiences with like-minded individuals in our exclusive community."
+              </p>
+              <a href="#">Join Now</a>
+          </article>
+      </div>
+
+      <div class="copyright">
+          <p>Copyright &copy; 2023, All Rights Reserved</p>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
